@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Anonize by abhvious</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Anonize</h1>
+        <p>Anonymous Survey System</p>
+
+        <p><img src="businessman_in_a_bowler_hat.jpg"></p>
+
+        <p>A paper describing the ANONIZE protocol appeared at the 2014 Oakland Security and Privacy conference.</p>
+
+        <p><blockquote>
+          Susan Hohenberger, Steven Myers, Rafael Pass, abhi shelat. "ANONIZE: A Large-Scale Anonymous Survey System", Oakland Security and Privacy Conference, 2014.
+          </blockquote>
+        </p><br/>
+
+        <ul>
+          <li><a href="anonize-oak-camera.pdf">Download paper<strong>PDF</strong></a></li>
+        </ul>
+
+      </header>
+      <section>
+        <h3>
+<a name="anonize" class="anchor" href="#anonize"><span class="octicon octicon-link"></span></a>Summary</h3>
+
+<p>Anonize is a cryptographic anonymous survey system.  It allows anyone to select an ad-hoc group of users (based on their emails for example) and create a survey in which only those users can anonymously submit exactly one response.  In the past, either anonymous surveys have allowed dishonest users to submit multiple responses and skew the results, or they have required a <em>trusted third party</em> to blind the identities of the respondents.   Additionally, in the past, the setup of such systems has been tedious work.  As far as we know, ANONIZE constitutes the first implementation of a large-scale secure computation protocol (of non-trivial functionalities) that scales to millions of users. </p>
+
+
+<h3><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>How does it work</h3>
+<p>In more details, there are three parties in our survey system: a registration authority (RA) that issues master user tokens, a survey authority (SA) that can create surveys, and users that respond to surveys. A user must first register with the RA and retrieve a secret <em>master user token</em>. This is a single token that can be used for all future surveys the user participates in. </p>
+
+<p>Anyone can act as an SA by choosing a uniquel survey ID and publishing a list of identities that are permitted to participate in that survey. The list of identities that can participate in a particular survey can grow dynamically, and the SA can create a survey without any interaction with others.</p> 
+
+<p>Finally, a user who is on the list of valid identities for a survey can non-interactively submit a response to the survey by simply routing one message to the SA (through an anonymous network like Tor, or anonymous proxy relay).</p>
+
+<p>See the paper for details about our model.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Implementation</h3>
+
+<p>We have a research-quality implementation that we are currently hardening to deploy.</p>
+
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors</h3>
+
+<p>This project was started by 4 professors of cryptography: Rafael Pass at Cornell, Susan Hohenberger at Johns Hopkins, Steven Myers at Indiana University, and abhi shelat at the U. of Virginia.</p>
+
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
