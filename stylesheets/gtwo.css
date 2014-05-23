@@ -8934,15 +8934,16 @@ input::-moz-focus-inner {
   background-color: #2b3848;
   /** 
   * Add your custom background image for a cool parallax effect.
-  * background-image:url('img/your-header-background-image.png')
+  * background-image:url('img/your-header-background-image.png') #ea5343;
   *****************/
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
   color: #fff;
-  border-top: 5px solid #ea5343;
+  border-top: 5px solid #b2b686; 
 }
 
 .logo {
@@ -9165,7 +9166,7 @@ input::-moz-focus-inner {
   display: block;
   position: relative;
   border-radius: 50%;
-  background-color: #ea5343;
+  background-color:  #ea5343;
   width: 180px;
   height: 180px;
   margin: 0 auto 30px auto;
