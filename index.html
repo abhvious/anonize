@@ -27,8 +27,8 @@
 			<!-- START: Intro -->
 			<div class="twelve columns header-intro-wrap fadeUpIn">
 				<h1 class="logo">ANONIZE</h1>
-				<p>Anonymous survey system</p>	
-					<p class="hs-disclaimer"><strong>Create</strong> anonymous surveys which guarantee only authorized users can respond</p>
+				<p>Cryptographic Anonymous Survey System</p>	
+					<p class="hs-disclaimer"><strong>Create</strong> anonymous surveys which guarantee only authorized users can respond exactly once</p>
 				<form action="" class="header-signup">
           <a href="anonize-oak-camera.pdf" class="btn-side btn-code">Read our paper</a>
 				</form>
@@ -89,16 +89,16 @@
 			<div class="row">
 				<div class="centered eight columns animate-on-scroll scroll-animation-init fadeDownIn" data-scrollanimation="fadeDownIn">
 			<h3>Anonymous but accountable</h3>			
-          <p>Anonize is a cryptographic anonymous survey system.  It allows anyone to select an ad-hoc group of users (based on their emails for example) and create a survey in which only those users can anonymously submit exactly one response.  In the past, either anonymous surveys have allowed dishonest users to submit multiple responses and skew the results, or they have required a <em>trusted third party</em> to blind the identities of the respondents.   Additionally, in the past, the setup of such systems has been tedious work.  As far as we know, ANONIZE constitutes the first implementation of a large-scale secure computation protocol (of non-trivial functionalities) that scales to millions of users. </p>
+          <p>ANONIZE is a cryptographic anonymous survey system.  It allows anyone to select an ad-hoc group of users (based on their emails for example) and create a survey in which only those users can anonymously submit exactly one response.  In the past, either anonymous surveys have allowed dishonest users to submit multiple responses and skew the results, or they have required a <em>trusted third party</em> to blind the identities of the respondents.   Additionally, in the past, the setup of such systems has been tedious work.  As far as we know, ANONIZE constitutes the first implementation of a large-scale secure computation protocol (of non-trivial functionalities) that scales to millions of users. </p>
 
 		<h3>Ad-hoc setup</h3>			
-		<p>In more details, there are three parties in our survey system: a registration authority (RA) that issues master user tokens, a survey authority (SA) that can create surveys, and users that respond to surveys. A user must first register with the RA and retrieve a secret <em>master user token</em>. This is a single token that can be used for all future surveys the user participates in. </p>
+		<p>There are three parties in our survey system: a <em>registration authority (RA)</em> that issues master user tokens, a <em>survey authority (SA)</em> that can create surveys, and <em>users</em> that respond to surveys. A user must first register (once) with the RA to retrieve a secret <em>master user token</em>. This is a single token that can be used for all future surveys the user participates in. </p>
 
-		<p>Anyone can act as an SA by choosing a uniquel survey ID and publishing a list of identities that are permitted to participate in that survey. The list of identities that can participate in a particular survey can grow dynamically, and the SA can create a survey without any interaction with others.</p> 
+		<p>Anyone can act as an SA by choosing a unique survey ID and publishing a list of identities (e.g. email addresses or phone numbers) that are permitted to participate in that survey. The SA can create a survey without any interaction with other parties, and the list of identities that can participate in a particular survey can grow dynamically.</p> 
 
-		<p>Finally, a user who is on the list of valid identities for a survey can non-interactively submit a response to the survey by simply routing one message to the SA (through an anonymous network like Tor, or anonymous proxy relay).</p>
+		<p>Finally, a user who is on the list of valid identities for a survey can non-interactively submit a response to the survey by simply routing one message to the SA (using an anonymous network like Tor, or anonymous proxy relay).</p>
 
-		<p>See the paper for details about our model.</p>
+		<p>See the <a href="anonize-oak-camera.pdf">paper</a> for details about our model.</p>
 
 		<h3>Implementation</h3>	
 		<p>We have a research implementation that we are currently hardening to deploy.</p>
@@ -145,7 +145,7 @@
 		<div class="row footer-info">
 			<!-- START: Copyright Notice -->
 			<div class="six columns">
-				<p class="footer-copyright">Theme inspired by Martini website</p>
+				<p class="footer-copyright"><small>Theme inspired by Martini and Gumby</small></p>
 			</div>
 			<!-- /END: Copyright Notice -->
 		</div>
