@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900);
+body  { 
+	font-family: "Roboto", sans-serif; font-size:12pt; 
+/*	background: rgba(59,67,79,1); */}
+table {
+display: table;
+border-collapse: separate;
+border-color: gray;
+margin: 2%;
+padding:2%;
+background: #fff;
+width: 95%;
+}
+thead {
+display: table-header-group;
+vertical-align: middle;
+border-color: #cfcfcf;
+font-size: 12pt;
+padding:20px;
+}
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+td {
+	width: 10%;
+	text-align: center;
+	border-left: 1px solid #bebebe;
+}
+table input {
+	padding: 0;
+	margin: 2px 0;
+}
+th, td {
+	border-color: #cfcfcf;
+}
+input[type="radio"] {
+	-webkit-appearance: radio;
+	width:1.2em;
+	height:1.2em;
+    content: '';
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 0.5em;
+}
+textarea { margin-bottom:20px; font-weight:300;}
+input.radio{display:block;margin:4px 0 0 0;padding:0;width:15px;height:15px;}
+tbody th { padding: 8px; width:40%; }
+tbody tr:hover td,  tbody tr:hover th,  tbody tr:hover label{
+	background-color:#ffbf00;color:#000000;
+}
+tbody tr:hover td{ border-left:1px solid #c4bad3;}
+.btn-side{
+  width: 25%;
+  min-width: 150px;
+  padding: 15px;
+  border: 5px solid #ea5343;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  background-color: #ea5343;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.btn-side:hover {
+  cursor: pointer;
+  background-color: #ee7063;
+  border-color: #ee7063;
+}
+.btn-side:active {
+  background-color: #e73e2c;
+  border-color: #e73e2c;
+}
+
+.bs-docs-header {color:#ffffff; }
+
+.logo {
+	font-weight: 700;
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.paper {
+	margin-top:10px; 
+	background-color:#ffffff;
+}
+
+.paperqr {
+	padding:40px 60px;
+}
+
+.helpnote {
+	color:#cccccc; padding-top:20px; padding-bottom:50px;
+}
+
+      body {
+        padding-top: 0px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 1300px;
+      }
+      .container-narrow2 {
+        padding-top: 50px;
+        margin: 0 auto;
+        max-width: 500px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 0px 0;
+        background: rgba(59,67,79,1);
+        text-align: center;
+      }
+      
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+  .custom > li > a:hover {
+    background-color: rgba(79,87,99,0.5);
+    color: white;
+}

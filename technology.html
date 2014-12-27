@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en" data-ng-app="anonapp">
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/anon-black.css">
+
+  <head>
+    <meta charset="utf-8">
+    <title>ANONIZE Beta How it Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    
+  </head>
+
+  <body>
+          <ul class="nav nav-pills pull-right custom">
+            <li><a class = "active" href="/assets/index.html">Home</a></li>    
+            <li><a href="/assets/technology.html">How it works</a></li>
+            <li><a href="/assets/about.html">About</a></li>
+        </ul>
+
+       <div class="jumbotron">
+      <center>   
+           <img src="/assets/e18-grey.png" style = "padding-top:5%; width:14%; min-width:100px;">
+      <p class="lead" style="color:#fff;">How it Works.</p>
+      </center>
+    </div>
+<div class = "row" style="padding-left:5%;padding-right:5%; padding-top:5%">
+    <div class="col-md-4" style="padding-left:4%; padding-right:4%; text-align: left;" >
+        <h4><b> 1. Register the Anonize App.</b></h4>
+          <p>Download the Anonize App (freely available for iPhone and Android). You will be asked to enter your email and a verification code that is sent to your email. You have now completed the Anonize registration, and you never need to complete it again (unless your loose your phone). 
+          </p>
+    </div>
+    <div class="col-md-4" style="padding-left:4%; padding-right:4%; text-align: left;" >
+          <h4><b>2. Fill out a survey.</b></h4>
+          <p>Standard online surveys either send participants a <b>personalized</b> link or require <b>log-in</b>. In both cases, your identity is linked to your responses. In Anonize, all participants receive the <b>same</b> link to a public webpage  (like <a href="https://localhost:7443/view/9SdOwTxebQidGUWM4DMtJS9fquP43aYyCiZDfAXLvfy">this one</a>), and are not required to identify themselves. 
+          You fill out the survey using a webbrowser. 
+          </p>
+    </div>
+    <div class="col-md-4" style="padding-left:4%; padding-right:4%; text-align: left;" >
+          <h4><b>3. Submit using the Anonize app.</b></h4>
+          <p>If you completed the survey on your phone, you will be directly taken to the Anonize app to anonymously submit your response. If you completed the survey on you computer, a QR code appears. Scan this QR code with the Anonize app to anonymously submit the response.</p>
+    </div>
+    </div>
+ 
+ <div class = "row" style = "padding-top:7%">
+     <div class="jumbotron">
+    <h1 style="color:#fff;"> Under the Hood. </h1>
+     </div></div>
+    <br/>
+<div class = "row" style="padding-left:5%;padding-right:5%;">
+    <div class="col-md-4" style="padding-left:4%; padding-right:4%; text-align: left;" ><br/>
+        <h4><b> User Registration</b></h4>
+          <p>When you register your Anonize app, the app receives in return a cryptographic "master token". Think of this master token as a <b>stamp</b>. This stamp can be used to mint <b>"digital coins"</b>, which will be used to submit surveys. 
+          </p>
+    </div>
+    <div class="col-md-4" style="padding-left:4%; padding-right:4%; text-align: left;" ><br/>
+          <h4><b>Only Authorized Users Can Submit</b></h4>
+          <p>Using their master token, a user can mint <b> one and only one</b> coin for any survey they are authorized for. On the other hand, no user can forge a coin for surveys they are not authorized for. Anyone can verify whether a coin is "valid" for a particular survey. </p>
+    </div>
+    <div class="col-md-4" style="padding-left:4%; padding-right:4%; text-align: left;" ><br/>
+          <h4><b>Coins are Unlinkable</b></h4>
+          <p>Although anyone can verify that the coin minted by a user is valid (that is, it corresponds to a user that is authorized to submit in the survey) there is absolutely <b>no link between the user and the coin</b>. The coins can therefore be used to replace user names when submitting a survey. </p>
+    </div>
+    </div>
+    <hr>
+    <center>
+      <h3>The Details.</h3> </center>
+<div class = "row" style="padding-top:2%;padding-left:5%;padding-right:5%;">
+<div class="col-md-8 col-md-offset-2" style="padding-left:5%; padding-right:5%; text-align: left;" >
+
+<p>The first link below provides a more detailed overview of the Anonize system. The second one provides formal security definitions, full descriptions of the cryptographic mechanisms, and formal proofs of security.</p>
+
+
+      <ul>
+      <li>Susan Hohenberger, Steven Myers, Rafael Pass, abhi shelat. 
+      <a href="/assets/anonize-ieee-special.pdf"> "An Overview of ANONIZE: A Large-Scale Anonymous Survey System" </a>, IEEE Security and Privacy Magazine, 2015.</li><br/>
+
+      <li>Susan Hohenberger, Steven Myers, Rafael Pass, abhi shelat. <a href="http://anonize.com/anonize-oak-camera.pdf">  "ANONIZE: A Large-Scale Anonymous Survey System" </a>, Oakland Security and Privacy Conference, 2014.</li>
+      </ul>
+</div></div>
+    <hr/>
+
+<!--
+          <p><h2>FAQ</h2></p>
+          <p>Q: How do I know that the Anonize app actually does what it is supposed to. </p>
+          <p>A: The Anonize app is open source. Anyone can verify that the code correctly implements the desired functionality.</p>
+          <br/>
+          
+          <p>Q: I am not a cryptographer. Why would I trust the cryptography? </p>
+          <p>A: We provide a proof of security for the cryptographic protocol (see the full paper) underlying the Anonize app. While most people will not be able to verify the math, any cryptographer can verify the details if needed.</p>
+    </div>
+    -->
+          <center>For more information, email info@anonize.com</center>
+  </body>
+</html>
