@@ -1,7 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900);
-body  { 
-	font-family: "Roboto", sans-serif; font-size:12pt; 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+body  { font-family: "Roboto", sans-serif; font-size:12pt; 
 /*	background: rgba(59,67,79,1); */}
+.condensed { font-family: "Roboto Condensed", "Roboto", sans-serif; }
+.nav a { color:#72A3C0; }
+h1, h2, h3, h4 { font-family: "Roboto Condensed", "Roboto", sans-serif; }
+h1 { font-size:38pt;  }
+h3 { font-size:28pt;  }
 table {
 display: table;
 border-collapse: separate;
@@ -52,13 +56,22 @@ tbody tr:hover td,  tbody tr:hover th,  tbody tr:hover label{
 	background-color:#ffbf00;color:#000000;
 }
 tbody tr:hover td{ border-left:1px solid #c4bad3;}
+.square {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
 .btn-side{
-  width: 25%;
+  /*width: 25%;*/
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
   min-width: 150px;
   padding: 15px;
+  margin: 2px;
   border: 5px solid #ea5343;
   font-size: 18px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #fff;
   font-weight: 600;
   background-color: #ea5343;
@@ -122,7 +135,7 @@ tbody tr:hover td{ border-left:1px solid #c4bad3;}
 
       /* Main marketing message and sign up button */
       .jumbotron {
-        margin: 0px 0;
+        margin: 0 0;
         background: rgba(59,67,79,1);
         text-align: center;
       }
@@ -138,3 +151,33 @@ tbody tr:hover td{ border-left:1px solid #c4bad3;}
     background-color: rgba(79,87,99,0.5);
     color: white;
 }
+.dl {
+  width: 197px;
+  height: 69px;
+  padding-top:60px;
+  text-indent: -9999px;
+  border: 0;
+  display: inline-block;
+  margin-right: 0;  
+}
+.dland {
+  background: transparent url('/assets/dl.png') no-repeat -197px 0px;
+  margin:5px;
+}
+.dlios {
+  background: transparent url('/assets/dl.png') no-repeat 0px 0px;
+  margin:5px;
+}
+.centerhead {
+  display:block; 
+  position:relative;
+  left:50%;
+  width:25%;
+  min-width:250px;
+  transform:translate(-50%, 0%);
+  -ms-transform:translate(-50%, 0%);
+  -webkit-transform:translate(-50%, 0%);
+  -o-transform:translate(-50%, 0%);
+  -moz-transform:translate(-50%, 0%);
+}
+

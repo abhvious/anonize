@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="anonapp">
   <link rel="stylesheet" href="/assets/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/anon-black.css">
+  <link rel="stylesheet" href="/assets/anon-black.css">
 
   <head>
     <meta charset="utf-8">
@@ -14,42 +14,145 @@
 
   <body>
           <ul class="nav nav-pills pull-right custom">
-            <li><a class = "active" href="index.html">Home</a></li>    
-            <li><a href="technology.html">How it works</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a class = "active" href="/index.html">Home</a></li>    
+            <li><a href="/technology.html">How it works</a></li>
+            <li><a href="/about.html">About</a></li>
         </ul>
-    <div class="jumbotron">
-    <center>
-    <img src="/assets/e18-grey.png" style = "min-width: 250px; width: 34%;">
-    <p class="lead" style="color:#fff;">Secure Anonymous Surveys.</p><br/><br/>
-          <a href="https://beta.anonize.com/assets/newsurvey.html" style="text-decoration: none;">
-          <button class="btn-side btn-default"><i class="icon-plus"></i>Create a Survey</button>
+    <div class="jumbotron" style="background:url(/assets/crowd2.jpg) no-repeat center center;background-size: cover; padding:0;z-index:-1;filter: ">
+        <div style="margin:0;padding:;width:100%;opacity:1.0;background:rgba(59,67,79,0.8)">
+        <br><br>
+        <img src="/assets/e18-clear.png" class="centerhead" style="opacity:0.8;z-index:1;">
+        <center>
+        <p class="lead condensed" style="color:#fff;">Truly Anonymous Surveys.</p>
+<!--    <a href="https://itunes.apple.com/us/app/anonize/id978443545?mt=8" target="itunes_store" class="dl dlios">Get the iOS app</a><a href="https://play.google.com/store/apps/details?id=com.anonize.anonize2" class="dl dland">Get the Android app
+    </a> -->
+
+<!-- <a class="btn btn-primary btn-outline btn-small" href="https://itunes.apple.com/app/duolingo-learn-spanish-french/id570060128?mt=8" target="_blank" data-track-click="mobile download ios"><span class="splash-icon apple"></span><span class="link-text">iOS</span></a>
+<a class="btn btn-primary btn-outline btn-small" href="https://play.google.com/store/apps/details?id=com.duolingo" data-track-click="mobile download android" target="_blank"><span class="splash-icon android"></span><span class="link-text">Android</span></a> -->
+
+<!--          <a href="https://itunes.apple.com/us/app/anonize/id978443545?mt=8" style="text-decoration: none;">
+          <button class="btn-side btn-default condensed"><i class="icon-plus"></i>iOS</button>
           </a>
-<br/><br/>
-<br/><br/>
-<br/>
+          <a href="https://play.google.com/store/apps/details?id=com.anonize.anonize2" style="text-decoration: none;">
+          <button class="btn-side btn-default condensed"><i class="icon-plus"></i>Android</button>
+          </a>
+-->
+
+          <!-- a href="/assets/newsurvey.html" style="text-decoration: none;">
+          <button class="btn-side btn-default"><i class="icon-plus"></i>Create a Survey</button>
+          </a -->
+    <!--a href="https://itunes.apple.com/us/app/anonize/id978443545?mt=8" target="itunes_store" class="dl dlios">Get the iOS app</a><a href="https://play.google.com/store/apps/details?id=com.anonize.anonize2" class="dl dland">Get the Android app
+    style="padding-left:5%;padding-right:5%;"
+    </a-->
+          <br/><br/><br/>
+    </div>
     </center></div>
 <br>  
-<div class = "row" style="padding-left:5%;padding-right:5%;">
-<center> <h1> Introducing ANONIZE. </h1></center><br>
-<div class="col-md-4" style="padding-left:3%; padding-right:3%; text-align: left;">
-        <h4><b> Traditional Web Surveys are Not Anonymous</b></h4>
-        <p> Traditional survey system on the web <i>claim</i> that your response is anonymous, but in reality, they keep a database that maintains an explicit <i>link</i> between you and your response. They need this to make sure you only respond ONCE. You must trust them to maintain your anonymity, you must trust that they never get hacked.
-        </p> <p> This is a <b>DANGEROUS</b> principle.</p>
+<div class="container">
+ <div class = "row">
+ <center> <h2 class="condensed"> Introducing ANONIZE. </h1></center><br>
+  <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+        <h4 class="condensed"><b> Traditional Web Surveys Are Not Anonymous</b></h4>
+        <p> Traditional survey systems on the web claim that your response is anonymous, but in reality, they keep a database that maintains an explicit <i>link</i> between you and your response. They need this to make sure you only respond ONCE. You must trust them to maintain your anonymity, you must trust that they never get hacked.
+        As demonstrated by recent attacks (e.g., Sony), this is a DANGEROUS principle.</p>
+  </div>
+ </div>
+ <div class = "row">
+  <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+          <h4 class="condensed"><b>The ANONIZE System Enables True Anonymity</b></h4>
+          <p>The ANONIZE system is based on a new <a href="/technology.html">cryptographic technique</a> that ensures only survey targets can respond, and only once, while unconditionally guaranteeing anonymity: even if our servers are fully compromised, and all data is leaked, a link between users and their responses cannot be found.
+          Anyone can create a survey by specifying a set of target user emails. The survey is posted on a public webpage but only targetted users can submit a response.
           </p>
-</div>
-<div class="col-md-4" style="padding-left:3%; padding-right:3%; text-align: left;" >
-          <h4><b>A Cryptographic Solution</b></h4>
-          <p>ANONIZE is a new <a href="/assets/technology.html">cryptographic technology</a> that ensures only authorized users can respond (exactly once), while unconditionally guaranteeing anonymity: even if our servers are fully compromised, and all data is leaked, a link between users and their responses cannot be found.</p>
-</div>
-<div class="col-md-4" style="padding-left:3%; padding-right:3%; text-align: left;" >
-          <h4><b>Using ANONIZE</b></h4>
-          <p>Anyone can create a survey by specifying a set of authorized user emails. The survey is posted on a public webpage (like <a href="https://localhost:7443/view/9SdOwTxebQidGUWM4DMtJS9fquP43aYyCiZDfAXLvfy">this one</a>) that can be sent to all users. Users need to download and register their Anonize App (iPhone and Android available) and can then use this app to anonymously submit survey responses.  
-        </p><p>See <a href="/assets/technology.html">How it Works.</a></p>
-        </div>
-        <br><br>
+  </div>
+ </div>
+<br>
+<!--          <center><a href="/assets/newsurvey.html" style="text-decoration: none;">
+          <button class="btn-side btn-default condensed"><i class="icon-plus"></i>CREATE A SURVEY</button>
+          </a></center>
+-->
+<!--
+<div class = "row" style="padding-left:5%;padding-right:5%;">
+<center> <h1>Before you can start</h1></center><br/>
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+        <h4><b>1. Download the free Anonize App (<a href="https://itunes.apple.com/us/app/anonize/id978443545?mt=8&uo=6&at=&ct=">iOS</a> and 
+<a href="https://play.google.com/store/apps/details?id=com.anonize.anonize2">
+          Android</a>) </b> </h4>
+    </div>
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+              <h4><b>2. Register your email address</b></h4><p> <!--Use your netid email. Wait for a  code. -->
+          <!--You will be asked to enter your email address and a 
+          Enter the verification code sent to your email (so we can verify that it is yours). <br/><i> For university course evaluations, make sure you register the email associated with your NetID. </i> 
+          <!-- (You can register multiple emails if you want.)</p>
+    </div>
+</div> -->
+
+<hr/>
+  <div class = "row">
+  <center> <h2 class="condensed"> Status of ANONIZE </h2></center><br>
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">     
+          <p>The anonize system is no longer running as a service. </p>
+    </div>
+    <br>
+  </div>
+
+
+  <!-- <div class = "row">
+  <center> <h2 class="condensed"> Using ANONIZE. </h2></center><br>
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+        <h4 class="condensed"><b>1. Get the free Anonize App (<a href="https://itunes.apple.com/us/app/anonize/id978443545?mt=8&uo=6&at=&ct=">iOS</a> and 
+<a href="https://play.google.com/store/apps/details?id=com.anonize.anonize2">
+          Android</a>) and Register your email  </b> </h4>
+          <p>Enter the verification code sent to your email (so we can verify that it is yours). <br/><i> For university course evaluations, make sure you register the email associated with your NetID. </i> </p>
+    </div>
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+          <h4 class="condensed"><b>2. Fill out a survey</b></h4>
+<p>          Click on a survey link, fill it out on your phone or your computer.</p>
+    </div>
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+          <h4 class="condensed"><b>3. Submit using the Anonize app</b></h4>
+          <p>On your phone: click "Submit From App."</p>
+          <p>On your computer: click "Generate QR Code" and scan it with the Anonize app.</p>
+    </div>
+    <br>
+  </div> -->
+<br/>
+
+<!--
+ <div class = "row">
+<center> <h1> Creating Your Own ANONIZE Survey </h1></center><br>
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+        <h4><b> 1. Choose your questions and target users</b></h4>
+        Select likert (1-5), and free-text questions (we provide templates for course evaluations).
+        Provide email addresses of everyone who should be authorized to complete the survey.</p>
+    </div>
+  </div>
+
+<div class = "row" style="padding-left:5%;padding-right:5%;">
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+          <h4><b>2. Preview your survey</b></h4>
+          <p>Click "Preview" to generate a link to your survey (as well as a link to view the results of the survey).
+          Check out the survey, and if you find errors, simply adjust the questions and click "Preview" again.
+</p>
+    </div></div>
+
+<div class = "row" style="padding-left:5%;padding-right:5%;">
+    <div class="col-md-8 col-md-offset-2" style="padding-left:3%; padding-right:3%; text-align: left;">
+          <h4><b>3. Publish your survey!</b></h4>
+          <p>Email the survey link to all your target users, or simply make it publicly available on your web page!
+<i> Only users that have registered one of the "authorized" email addresses will be able to complete the survey, so make sure your users have registered the right email address.</i>
+          </p>
+          <br/><br/>
+          <center><a href="/assets/newsurvey.html" style="text-decoration: none;">
+          <button class="btn-side btn-default"><i class="icon-plus"></i>Create a Survey</button>
+          </a></center>
+    </div>
+    </div>
+-->
+
+
+  <br><br>
 </div>
 <hr>
-          <center>For more information, email info@anonize.com</center>
-  </body>
+          <center>For more information, email info@anonize.org</center>
+</body>
 </html>
